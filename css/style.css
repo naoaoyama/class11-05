@@ -1,0 +1,171 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --defaultColor:#55A2A6;
+  --defaultBlack:#151515;
+  --lightBlack:#333333;
+  --darkerBlack:#111111;
+  --lightBlack2:#444444;
+  --defaultGray:#CCC;
+  --darkGray:#B2B2B2;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body, 
+nav,
+main,
+footer,
+main > section,
+.features a,
+.about blockquote,
+.about > section > article {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  color: var(--darkerBlack);
+}
+
+h1,
+h3 {
+  text-transform: capitalize;
+}
+
+h2 {
+  text-transform: uppercase;
+  color: var(--defaultBlack);
+
+}
+
+h3 {
+  color: var(--lightBlack);
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (min-width:250px) {
+
+  nav > ul{
+    display: none;
+  }
+
+nav aside {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--darkerBlack);
+  color: white;
+  align-items: center;
+  padding-left: 2vh;
+  padding-right: 2vh;
+}
+
+nav h2 {
+  padding-left: 5vh;
+}
+
+details ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: var(--darkerBlack);
+}
+
+
+details li {
+  display: flex;
+}
+
+details a {
+  color: white;
+  padding: 3%;
+  width: 100%;
+}
+
+
+summary {
+  font-size: 24px;
+}
+
+details {
+  padding-right: 5%;
+  position: absolute;
+  text-align: right;
+  width: 95%;
+}
+
+header {
+  height: 40vh;
+  background-image: url(/img/pexels-jaime-reimer-2662116.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header > article {
+  background-color: rgba(50,50,50,.4);
+  height: 100%;
+  width: 100%;
+}
+/* FEATURES SECTION */
+.features {
+  row-gap: 6vh;
+}
+
+.features blockquote {
+  /* width: 100%; */
+  color: white;
+  background-color: #55A2A6;
+  padding: 4%;
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.features > article {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5vh;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+
+.features p,
+.features cite {
+  width: 80%;
+  color: var(--darkGray);
+}
+
+.features a {
+  color: var(--darkerBlack);
+  align-items: center;
+  row-gap: 2vh;
+  text-align: center;
+}
+
+.features i {
+   font-size: 48px;
+}
+
+.features h3 {
+  width: 40%;
+  text-align: center;
+  font-weight: 600;
+}
+/* FEATURES SECTION END */
+
+
+
+}
